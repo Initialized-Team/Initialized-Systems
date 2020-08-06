@@ -22,8 +22,12 @@ import java.util.stream.Collectors;
 @Mod("inits")
 public class InitializedSystems
 {
+    public static final String MODID = "inits";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
+
+
+
 
     public InitializedSystems() {
         // Register the setup method for modloading
@@ -37,6 +41,8 @@ public class InitializedSystems
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        LOGGER.debug("Im...Alive?");
     }
 
     private void setup(final FMLCommonSetupEvent event)
