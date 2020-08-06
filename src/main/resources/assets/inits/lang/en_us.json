@@ -1,0 +1,11 @@
+{
+  "itemGroup.inits-materials": "IS Materials",
+  "item.inits.energy_crystal_1": "Dirty Energy Crystal",
+  "item.inits.energy_crystal_2": "Clean Energy Crystal",
+  "item.inits.energy_crystal_3": "Cut Energy Crystal",
+  "item.inits.energy_crystal_4": "Polished Energy Crystal",
+  "item.inits.energy_crystal_5": "Infused Energy Crystal",
+  "item.inits.energy_crystal_6": "Energized Energy Crystal",
+  "item.inits.energy_crystal_7": "Pure Energy Crystal",
+  "block.inits.crystal_ore_block": "Crystal Ore"
+}

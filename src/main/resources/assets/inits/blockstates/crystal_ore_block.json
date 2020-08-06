@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "inits:block/crystal_ore_block" }
+  }
+}
