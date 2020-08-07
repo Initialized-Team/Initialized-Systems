@@ -7,5 +7,15 @@
   "item.inits.energy_crystal_5": "Infused Energy Crystal",
   "item.inits.energy_crystal_6": "Energized Energy Crystal",
   "item.inits.energy_crystal_7": "Pure Energy Crystal",
-  "block.inits.crystal_ore_block": "Crystal Ore"
+  "block.inits.crystal_ore_block": "Crystal Ore",
+  "block.inits.dev_block": "Dev Block",
+  "block.inits.power_cube_1": "Power Cube Level 1",
+  "block.inits.power_cube_2": "Power Cube Level 2",
+  "block.inits.power_cube_3": "Power Cube Level 3",
+  "block.inits.power_cube_4": "Power Cube Level 4",
+  "block.inits.power_cube_5": "Power Cube Level 5",
+  "block.inits.power_cube_6": "Power Cube Level 6",
+  "block.inits.power_cube_7": "Power Cube Level 7",
+  "block.inits.power_cube_0": "Creative Power Cube",
+  "block.inits.dev_cable": "Dev Cable"
 }

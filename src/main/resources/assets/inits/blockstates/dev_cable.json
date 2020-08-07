@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "inits:block/dev_cable" }
+  }
+}

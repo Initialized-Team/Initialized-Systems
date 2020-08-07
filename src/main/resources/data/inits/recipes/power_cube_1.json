@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#c#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_block"
+    },
+    "c": {
+      "item": "inits:energy_crystal_1"
+    }
+  },
+  "result": {
+    "item": "inits:power_cube_1"
+  }
+}

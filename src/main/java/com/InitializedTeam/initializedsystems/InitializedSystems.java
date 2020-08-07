@@ -46,6 +46,9 @@ public class InitializedSystems
         MinecraftForge.EVENT_BUS.register(this);
 
         LOGGER.debug("Im...Alive?");
+        LOGGER.debug("All seems good on our end!");
+        LOGGER.debug("All systems have been initialized...");
+        LOGGER.debug("Welcome to Initialized Systems!");
     }
 
     private void setup(final FMLCommonSetupEvent event)
