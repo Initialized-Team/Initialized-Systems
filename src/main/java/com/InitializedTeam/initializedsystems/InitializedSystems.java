@@ -3,6 +3,8 @@ package com.InitializedTeam.initializedsystems;
 import com.InitializedTeam.initializedsystems.util.RegistryHandler;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,6 +16,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.items.ItemStackHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -62,6 +65,14 @@ public class InitializedSystems
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
+
+    //custom item tab
+    public static final ItemGroup TAB = new ItemGroup("IsTab") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.CRYSTAL_ORE_BLOCK.get());
+        }
+    };
 
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
