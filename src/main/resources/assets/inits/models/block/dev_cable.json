@@ -1,6 +1,6 @@
 {
   "textures": {
-    "dev_cable": "minecraft:blocks/dev_cable"
+    "dev_cable": "inits:blocks/dev_cable"
   },
   "display": {
     "gui": {
