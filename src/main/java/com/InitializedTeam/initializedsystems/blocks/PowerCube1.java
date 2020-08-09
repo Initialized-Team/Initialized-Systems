@@ -16,3 +16,4 @@ public class PowerCube1 extends Block {
         );
     }
 }
+
