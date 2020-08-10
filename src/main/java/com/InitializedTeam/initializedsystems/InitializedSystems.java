@@ -66,11 +66,25 @@ public class InitializedSystems
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
 
-    //custom item tab
+    //custom item tabs
     public static final ItemGroup TAB = new ItemGroup("IsTab") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(RegistryHandler.CRYSTAL_ORE_BLOCK.get());
+        }
+    };
+
+    public static final ItemGroup TAB2 = new ItemGroup("IsTab2") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.POWER_CUBE_0.get());
+        }
+    };
+
+    public static final ItemGroup TAB3 = new ItemGroup("IsTab3") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(RegistryHandler.DEV_BLOCK.get());
         }
     };
 
