@@ -20,5 +20,6 @@
   "block.inits.power_cube_6": "Power Cube Level 6",
   "block.inits.power_cube_7": "Power Cube Level 7",
   "block.inits.power_cube_0": "Creative Power Cube",
-  "block.inits.dev_cable": "Dev Cable"
+  "block.inits.dev_cable": "Dev Cable",
+  "block.inits.gen_block": "Gen Block"
 }

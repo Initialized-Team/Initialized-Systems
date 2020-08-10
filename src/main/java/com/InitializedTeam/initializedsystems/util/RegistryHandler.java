@@ -1,8 +1,7 @@
 package com.InitializedTeam.initializedsystems.util;
 
 import com.InitializedTeam.initializedsystems.InitializedSystems;
-import com.InitializedTeam.initializedsystems.blocks.BlockItemBase;
-import com.InitializedTeam.initializedsystems.blocks.CrystalOreBlock;
+import com.InitializedTeam.initializedsystems.blocks.*;
 import com.InitializedTeam.initializedsystems.items.ItemBase;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -32,16 +31,17 @@ public class RegistryHandler {
 
     // Blocks
     public static final RegistryObject<Block> CRYSTAL_ORE_BLOCK = BLOCKS.register("crystal_ore_block", CrystalOreBlock::new);
-    public static final RegistryObject<Block> DEV_BLOCK = BLOCKS.register("dev_block", CrystalOreBlock::new);
-    public static final RegistryObject<Block> POWER_CUBE_1 = BLOCKS.register("power_cube_1", CrystalOreBlock::new);
-    public static final RegistryObject<Block> POWER_CUBE_2 = BLOCKS.register("power_cube_2", CrystalOreBlock::new);
-    public static final RegistryObject<Block> POWER_CUBE_3 = BLOCKS.register("power_cube_3", CrystalOreBlock::new);
-    public static final RegistryObject<Block> POWER_CUBE_4 = BLOCKS.register("power_cube_4", CrystalOreBlock::new);
-    public static final RegistryObject<Block> POWER_CUBE_5 = BLOCKS.register("power_cube_5", CrystalOreBlock::new);
-    public static final RegistryObject<Block> POWER_CUBE_6 = BLOCKS.register("power_cube_6", CrystalOreBlock::new);
-    public static final RegistryObject<Block> POWER_CUBE_7 = BLOCKS.register("power_cube_7", CrystalOreBlock::new);
-    public static final RegistryObject<Block> POWER_CUBE_0 = BLOCKS.register("power_cube_0", CrystalOreBlock::new);
-    public static final RegistryObject<Block> DEV_CABLE = BLOCKS.register("dev_cable", CrystalOreBlock::new);
+    public static final RegistryObject<Block> DEV_BLOCK = BLOCKS.register("dev_block", DevBlock::new);
+    public static final RegistryObject<Block> POWER_CUBE_1 = BLOCKS.register("power_cube_1", PowerCube1::new);
+    public static final RegistryObject<Block> POWER_CUBE_2 = BLOCKS.register("power_cube_2", PowerCube2::new);
+    public static final RegistryObject<Block> POWER_CUBE_3 = BLOCKS.register("power_cube_3", PowerCube3::new);
+    public static final RegistryObject<Block> POWER_CUBE_4 = BLOCKS.register("power_cube_4", PowerCube4::new);
+    public static final RegistryObject<Block> POWER_CUBE_5 = BLOCKS.register("power_cube_5", PowerCube5::new);
+    public static final RegistryObject<Block> POWER_CUBE_6 = BLOCKS.register("power_cube_6", PowerCube6::new);
+    public static final RegistryObject<Block> POWER_CUBE_7 = BLOCKS.register("power_cube_7", PowerCube7::new);
+    public static final RegistryObject<Block> POWER_CUBE_0 = BLOCKS.register("power_cube_0", PowerCube0::new);
+    public static final RegistryObject<Block> DEV_CABLE = BLOCKS.register("dev_cable", DevCable::new);
+    public static final RegistryObject<Block> GEN_BLOCK = BLOCKS.register("gen_block", GenBlock::new);
 
     // Block Items
     public static final RegistryObject<Item> CRYSTAL_ORE_BLOCK_ITEM = ITEMS.register("crystal_ore_block", () -> new BlockItemBase(CRYSTAL_ORE_BLOCK.get()));
@@ -55,5 +55,6 @@ public class RegistryHandler {
     public static final RegistryObject<Item> POWER_CUBE_7_ITEM = ITEMS.register("power_cube_7", () -> new BlockItemBase(POWER_CUBE_7.get()));
     public static final RegistryObject<Item> POWER_CUBE_0_ITEM = ITEMS.register("power_cube_0", () -> new BlockItemBase(POWER_CUBE_0.get()));
     public static final RegistryObject<Item> DEV_CABLE_ITEM = ITEMS.register("dev_cable", () -> new BlockItemBase(DEV_CABLE.get()));
+    public static final RegistryObject<Item> GEN_BLOCK_ITEM = ITEMS.register("gen_block", () -> new BlockItemBase(GEN_BLOCK.get()));
 
 }
