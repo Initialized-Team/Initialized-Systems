@@ -28,6 +28,7 @@ public class RegistryHandler {
     public static final RegistryObject<Item> ENERGY_CRYSTAL_5 = ITEMS.register("energy_crystal_5", ItemBase::new);
     public static final RegistryObject<Item> ENERGY_CRYSTAL_6 = ITEMS.register("energy_crystal_6", ItemBase::new);
     public static final RegistryObject<Item> ENERGY_CRYSTAL_7 = ITEMS.register("energy_crystal_7", ItemBase::new);
+    public static final RegistryObject<Item> ENERGY_CRYSTAL_FRAGMENTS = ITEMS.register("energy_crystal_fragments", ItemBase::new);
 
     // Blocks
     public static final RegistryObject<Block> CRYSTAL_ORE_BLOCK = BLOCKS.register("crystal_ore_block", CrystalOreBlock::new);

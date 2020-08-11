@@ -16,8 +16,6 @@ import javax.annotation.Nullable;
 
 public class GenBlock extends Block {
 
-    private static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
-
     public GenBlock() {
         super(Properties.create(Material.IRON)
                 .hardnessAndResistance(5.0f,6.0f)
@@ -28,25 +26,9 @@ public class GenBlock extends Block {
         );
     }
 
-    @Nullable
-    @Override
-    public BlockState getStateForPlacement(BlockItemUseContext context) {
-        return this.getDefaultState().with(FACING, context.getPlacementHorizontalFacing().getOpposite());
+    public boolean isOpaqueCube() {
+        return false;
     }
 
-    @Override
-    public BlockState rotate(BlockState state, Rotation rot) {
-        return state.with(FACING, rot.rotate(state.get(FACING)));
-    }
-
-    @Override
-    public BlockState mirror(BlockState state, Mirror mirrorIn) {
-        return state.rotate(mirrorIn.toRotation(state.get(FACING)));
-    }
-
-    @Override
-    protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
-    }
 }
 

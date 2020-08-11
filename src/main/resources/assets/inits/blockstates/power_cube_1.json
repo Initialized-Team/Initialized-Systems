@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "inits:block/power_cube_1" }
+    "": { "model": "inits:block/gen_block" }
   }
 }

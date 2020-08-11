@@ -1,8 +1,5 @@
 {
   "variants": {
-    "facing=north": { "model": "intis:block/gen_block" },
-    "facing=south": { "model": "intis:block/gen_block", "y":  180},
-    "facing=west": { "model": "intis:block/gen_block", "y":  270},
-    "facing=east": { "model": "intis:block/gen_block", "y":  90}
+    "": { "model": "inits:block/gen_block" }
   }
 }
